@@ -1,6 +1,7 @@
 import Book from './modules/book.js';
 import Library from './modules/library.js';
 import BooksLocalStorage from './modules/storage.js';
+import { DateTime } from "./modules/luxon/src/luxon.js";
 
 //display books
 document.addEventListener('DOMContentLoaded', Library.display);
@@ -61,3 +62,18 @@ hideContact.addEventListener('click', (e) => {
   hidden3.style.display = 'flex';
   e.preventDefault();
 });
+
+//date
+let time = () => {
+  const Date = document.querySelector("#date");
+  Date.textContent = DateTime.now().toLocaleString({
+    hour12: false,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+  });
+}
+setInterval(time, 1000);
