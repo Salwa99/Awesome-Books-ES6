@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Awesome books</title>
+</head>
+<body>
+
+    <header class="header-container">
+        <h3 class="nav-title">Awesome Books</h3>
+        <nav class="nav-bar">
+            <a id="hideForm" class="nav-items border-right" href="">List</a>
+            <a id="hideAddBook" class="nav-items border-right" href="">Add New</a>
+            <a id="hideContact" class="nav-items" href="">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <p id="date"></p>
+        <h1 id="hidden">
+           All Awesome books
+        </h1>
+        <h1 id="hidden2" class="allhidden">Add a New Book</h1>
+        <table>
+            <tbody id="bookList"></tbody>
+        </table>
+        
+
+        <form class="book-form allhidden">
+            <input type="text" id="title" placeholder="Title" /><br>
+            <input type="text" id="author" placeholder="Author" /><br>
+            <input type="submit" id="submit" value="Add" />
+            
+        </form>
+
+    </main>
+
+    <section class="contact allhidden">
+        <h1 id="hidden3" class="allhidden">Contact information</h1>
+        <div class="info">
+        <p>Do you have any questions or just one to say "Hello"? <br> You can reach out to us!</p>
+        <ul>
+            <li>Our e-mail: awesomebooks@gmail.com</li>
+            <li>Our phone number: 0043586534422</li>
+            <li>Our address: Streetname 22, 84503 City, Country</li>
+        </ul>
+    </div>
+    </section>
+
+    <footer>
+        <h3>&#169; Copyright@AwesomeBooks 2022</h3>
+    </footer>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
